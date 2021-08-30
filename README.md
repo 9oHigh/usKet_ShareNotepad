@@ -66,6 +66,11 @@
 - **메인 화면** : NavigationView를 이용( Plus 버튼을 클릭시 NavigationLink로 이동) + 임시로 메모 대신 사각형을 넣어둠
 - **설정 화면, 메모추가 화면** : 임시로 모양만 잡아둠
 
+<div align = "center">
+<br></br>
 
+![Concept_2021 8 30](https://user-images.githubusercontent.com/53691249/131350453-83e8b5ae-6889-491d-baa1-58a54cec8424.gif)
+
+</div>
 
 
