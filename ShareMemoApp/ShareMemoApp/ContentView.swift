@@ -16,42 +16,49 @@
 
 
 import SwiftUI
-import Foundation
 
 struct ContentView: View {
     
-    @State private var isLoading  : Bool = false
+    @State var animate = false
+    @State var endSplash = false
     
     var body: some View {
         
         ZStack{
+            MainPage(navigateTo: .newPad)
             
-            MainPage()
+            Color(animate ? .clear : .white)
             
-            if isLoading{
-                ZStack{
-                    LoadingPage()
-                    
-                    ProgressView()
-                        .progressViewStyle(CircularProgressViewStyle(tint:.iconColor))
-                        .offset(y: 30)
-                    
-                }
+            ZStack{
+                Image("logo")
+                    .resizable()
+                    .renderingMode(.original)
+                    .aspectRatio(contentMode: animate ? .fill : .fit)
+                    .frame(width: animate ? nil :330, height: animate ? nil :330)
+                    // Scaling View
+                    .scaleEffect(animate ? 3 : 1 )
+                    // Setting width to avoid over size
+                    .frame(width: UIScreen.main.bounds.width )
+                    // Hiding View after finished
+                    .opacity(endSplash ? 0 : 1)
             }
         }
-        .onAppear{
-            startFakeNetworkCallPage()
-        }
+        .edgesIgnoringSafeArea(.all)
+        .onAppear(perform:animateSplash)
+        
     }
     
-    func startFakeNetworkCallPage(){
-        isLoading = true
-        DispatchQueue.main.asyncAfter(deadline: .now()+3){
-            isLoading = false
+    func animateSplash(){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3){
+            withAnimation(Animation.easeOut(duration: 0.45)){
+                animate.toggle()
+            }
+            withAnimation(Animation.easeOut(duration: 0.45)){
+                endSplash.toggle()
+            }
         }
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

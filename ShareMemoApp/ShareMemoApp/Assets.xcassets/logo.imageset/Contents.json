@@ -1,11 +1,11 @@
 {
   "images" : [
     {
+      "filename" : "pinterest_profile_image.png",
       "idiom" : "iphone",
       "scale" : "1x"
     },
     {
-      "filename" : "pinterest_profile_image.png",
       "idiom" : "iphone",
       "scale" : "2x"
     },

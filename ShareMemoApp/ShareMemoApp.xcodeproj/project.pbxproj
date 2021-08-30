@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C7EF7D326DC9DEA006BA198 /* LoadingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7EF7D226DC9DEA006BA198 /* LoadingPage.swift */; };
 		4CECD52326D9E7540066F125 /* ShareMemoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CECD52226D9E7540066F125 /* ShareMemoAppApp.swift */; };
 		4CECD52526D9E7540066F125 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CECD52426D9E7540066F125 /* ContentView.swift */; };
 		4CECD52726D9E7560066F125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CECD52626D9E7560066F125 /* Assets.xcassets */; };
@@ -19,7 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C7EF7D226DC9DEA006BA198 /* LoadingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingPage.swift; sourceTree = "<group>"; };
 		4CECD51F26D9E7540066F125 /* ShareMemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareMemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CECD52226D9E7540066F125 /* ShareMemoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareMemoAppApp.swift; sourceTree = "<group>"; };
 		4CECD52426D9E7540066F125 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 				4CECD52226D9E7540066F125 /* ShareMemoAppApp.swift */,
 				4CECD52426D9E7540066F125 /* ContentView.swift */,
 				4CECD53326DA7F620066F125 /* MainPage.swift */,
-				4C7EF7D226DC9DEA006BA198 /* LoadingPage.swift */,
 				4CECD53726DBD09B0066F125 /* ButtonNavigationNewPad.swift */,
 				4CECD53526DBBF8B0066F125 /* ButtonNavigationSetting.swift */,
 				4CECD53126DA11BE0066F125 /* ColorExtension.swift */,
@@ -159,7 +156,6 @@
 				4CECD52526D9E7540066F125 /* ContentView.swift in Sources */,
 				4CECD52326D9E7540066F125 /* ShareMemoAppApp.swift in Sources */,
 				4CECD53426DA7F620066F125 /* MainPage.swift in Sources */,
-				4C7EF7D326DC9DEA006BA198 /* LoadingPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

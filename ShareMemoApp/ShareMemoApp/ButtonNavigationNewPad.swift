@@ -8,14 +8,16 @@
 import SwiftUI
 
 
-struct WritePage : View {
+struct ButtonNavigationNewPad : View {
     var body: some View{
-        Text("하이")
+        Text("New notepad")
+            .font(.largeTitle)
+            .fontWeight(.bold)
     }
 }
 
 struct ButtonNavigationNewPad_Previews: PreviewProvider {
     static var previews: some View {
-        WritePage()
+        ButtonNavigationNewPad()
     }
 }

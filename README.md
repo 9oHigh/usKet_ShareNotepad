@@ -65,3 +65,12 @@
 
 
 
+## Concept - 2021. 8. 30
+
+- **로딩 화면** : info.plist에 있는 Launch Screen을 적용 + Animation을 이용하여 ScaleEffect 적용
+- **메인 화면** : NavigationView를 이용( Plus 버튼을 클릭시 NavigationLink로 이동) + 임시로 메모 대신 사각형을 넣어둠
+- **설정 화면, 메모추가 화면** : 임시로 모양만 잡아둠
+
+
+
+
